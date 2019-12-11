@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Revista IES Al-Ándalus</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="lib/weather.css"> -->
+</head> 
+<body>
+    <div class="container">
+        <header>
+            <a href="https://iesalandalus.org/" class="logo">IES Al-Ándalus</a>
+
+            <div id="menu" class="menu">
+                <span class="menu-circle"></span>
+                <a id="menu-link" href="#" class="menu-link">
+                    <span class="menu-icon">
+                        <span class="menu-line menu-line-1"></span>
+                        <span class="menu-line menu-line-2"></span>
+                        <span class="menu-line menu-line-3"></span>
+                    </span>
+                </a>
+            </div>
+
+            <div id="menu-overlay" class="menu-overlay">
+                <a href="#container1" onclick="abrirCerrarMenu()">Info</a>
+                <a href="#container2" onclick="abrirCerrarMenu()">Revista</a>
+                <a href="#container3" onclick="abrirCerrarMenu()">Contacto</a>
+            </div>
+
+        </header>
+        <img class="escudo" src="images/escudo.webp" alt="Escudo IES"></img>
+        <div class="titulo_container lax" data-lax-translate-y="0 0,400 -500" data-lax-opacity="0 1, 100 0">
+            <h1 class="titulo lax">Al-Magazine</h1>
+            <h1 class="titulo2 lax">Al-Magazine</h1>
+        </div>
+        <div class="linea lax" data-lax-opacity="0 1,100 0"></div>
+    </div>
+
+    <div id="container1" class="container1">
+
+            <div class="masonry-wrapper lax" data-lax-preset="blurIn-30"><div class="masonry">
+                <div class="masonry-item">
+                    <img src="images/composition-14.svg" alt="Lecturas" class="masonry-content">
+                </div>
+                <div class="masonry-item">
+                    <div class="masonry-content">
+                        <h3>¡Ya está aquí!</h3>
+                        <p class="subtext"> Tras mucho esfuerzo hemos conseguido lanzar nuestra revista: Al-Magazine. Una revista donde todos tenemos nuestro espacio.</p>
+                    </div>
+                </div>
+                <div class="masonry-item">
+                    <img src="images/composition-23.svg" alt="Noticias" class="masonry-content">
+                </div>
+                <div class="masonry-item">
+                        <h3>Todo sobre nuestro centro</h3>
+                        <p class="subtext"> Noticias, actividades extraescolares, talleres, curiosidades, etc.</p>
+                </div>
+                <div class="masonry-item">
+                        <img src="images/composition-24.svg" alt="Noticias" class="masonry-content">
+                </div>
+                
+                <div class="masonry-item">
+                        <h3>¡Participa!</h3>
+                        <p class="subtext"> Nuestra revista está abierta para cualquier miembro de nuestra comunidad de aprendizaje. Ponte en contacto con nosotros.</p>
+                </div>
+            </div>
+
+    </div>
+</div>
+
+
+    <div id="container2" class="container2">
+            <div class=" subcontainer2 lax" data-lax-translate-y="0 0,700 -150">
+                <h2 >Último Número</h2>
+                <div id="numero1" class="image_container">
+                    <img class="image" src="numeros/assets/PortadaNum1.jpg" alt="Número 1">
+                    <div class="overlay">
+                        <div class="text">¿Quieres leerme? Clic aquí ;)</div>
+                    </div>
+                </div>
+                <h2 >Noviembre</h2>
+            </div>
+            
+        <!-- <h2 class="lax" data-lax-translate-y="0 0,400 -350">Último Número</h2>
+        <div id="numero1" class="image_container lax" data-lax-translate-y="0 0,400 -350">
+            <img class="image" src="numeros/assets/PortadaNum1.jpg" alt="Número 1">
+            <div class="overlay">
+                <div class="text">¿Quieres leerme? Clic aquí ;)</div>
+            </div>
+        </div>
+        <h2 class="lax" data-lax-translate-y="0 0,400 -350">Noviembre</h2> -->
+
+    </div>
+
+    <div id="container3" class="container3">
+           
+            <!-- data-lax-preset="leftToRight-0.05" data-lax-optimize=true     data-lax-translate-x="0 -1250, 2600 80"-->
+        <div class="subcontainer3izq"> 
+            <img src="images/instituto_art.webp"  class="foto_instituto lax"  "data-lax-preset="leftToRight-0.05" data-lax-optimize=true" alt="Nuestro instituto">
+        </div> 
+            <div class="subcontainer3der">
+                <div class="box1 lax" data-lax-preset="spin-180"></div>
+                <h2>Contacto</h2>
+                <h3>Para cualquier información puedes ponerte en contacto con el programa "Comunica" a través del correo eléctronico "comunica@iesalandalus.org"</h3>
+            </div>
+
+            <!-- <div class="sunny"></div> 
+            <div class="cloudy"></div>
+            <div class="rainy"></div>
+            <div class="snowy"></div>
+            <div class="rainbow"></div>
+            <div class="starry"></div>
+            <div class="stormy"></div> -->
+
+    </div>
+        <script src="lib/lax.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+
+</html>
