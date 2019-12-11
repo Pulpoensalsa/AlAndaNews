@@ -51,6 +51,7 @@ header {
     width: 6rem;
     align-self: center;
     justify-self: center;
+    z-index: 1001;
 }
 
 .titulo_container{
