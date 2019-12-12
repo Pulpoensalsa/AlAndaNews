@@ -120,58 +120,63 @@ header {
 */
 
  .container3{
-    width: 100vw;
     height: 100vh;
-    background-color: #40b3a2;
-    display:flex;
+    background-color: #8ee4af;   
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
 
     /*background-color:yellowgreen;
     background-blend-mode: multiply; */
 } 
 
 .subcontainer3izq{
-  flex-grow: 1;
-  order:1;
-  /* min-width: 250px; */
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    justify-content: center;
+
 }
 
 .foto_instituto
 {
-  width: 96%;
-  max-width: 650px;
-  height: 100%;  
-  max-height: 430px;
-  border-radius: 8px;
+  width: 30rem;
+  max-width: 30rem;
+  height: 20rem;  
+  max-height: 20rem;
+  border-radius: 6px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  flex-wrap: wrap;
+
 }
 
 .subcontainer3der{
-  flex-grow: 1;
-  order:1;
-  flex:1;
-  text-align: center;
-  padding-bottom: 1rem;
-  padding-right: 1rem;
-  min-width: 250px; 
-  align-self: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    min-width: 250px; 
+    align-self: center;
 }
 
 .box1{
   z-index: 0;
-  width: 240px;
-  height: 240px;
+  width: 360px;
+  height: 360px;
   border: 16px solid #def2f1;
   overflow: hidden;
   transform: rotateZ(65deg);
   opacity: 0.5;
-  margin-left: 15%;
+  margin-left: 10%;
   position: absolute;
+  
 }
 
 
@@ -238,7 +243,7 @@ p{
     height: 14vh;
 }
 
- @media only screen and (max-width: 400px)
+@media only screen and (max-width: 400px)
 {
     .titulo{
         font-size: 5em;
@@ -246,4 +251,15 @@ p{
     .titulo2{
       font-size: 5em;
     }  
+
+    .foto_instituto{
+        width: 20rem;
+        max-width: 20rem;
+        height: 15rem;  
+        max-height: 15rem;
+    }
+    .box1{
+        width: 340px;
+        height: 340px;
+    }
 } 
