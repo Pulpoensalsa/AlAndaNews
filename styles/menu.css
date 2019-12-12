@@ -89,6 +89,14 @@
   text-align: center;
   transition: opacity 0.2s ease-in-out;
   z-index: 1001;
+  padding-left: 3rem;
+}
+
+@media only screen and (max-width: 400px) {  
+  .menu-overlay  {
+    padding-top: 10rem;
+    padding-left: 1rem;
+  }
 }
 
 .menu-overlay.open {

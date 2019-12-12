@@ -4,7 +4,6 @@ img, video {
     vertical-align: middle;
   }
 
-
   p:not(:last-child) {
     margin: 0 0 1em;
     
@@ -24,7 +23,7 @@ img, video {
   }
   .masonry {
     columns: 1;
-    column-gap: 5px;
+    column-gap: 50px;
   }
   .masonry-item {
     display: inline-block;

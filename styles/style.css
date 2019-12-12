@@ -1,11 +1,10 @@
 body{
     background: #85DCBa;
-    margin: 0;
     font-family: Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-   
+    width:100vw;
 } 
 
 @font-face {
@@ -27,6 +26,7 @@ body{
 
 .container{
     height: 100vh;
+    width:100vw;
     display:grid;
     grid-template-rows: 10% 15% 35% ;
 }
@@ -152,7 +152,7 @@ header {
   order:1;
   flex:1;
   text-align: center;
-   padding-bottom: 1rem;
+  padding-bottom: 1rem;
   padding-right: 1rem;
   min-width: 250px; 
   align-self: center;
@@ -203,8 +203,8 @@ p{
     height: 40%;
     margin-top: 6em;
     position: relative;
-
 }
+
 .linea::after{
     content: " ";
     position: absolute;
@@ -234,8 +234,6 @@ p{
     height: 14vh;
 }
 
-
-
  @media only screen and (max-width: 400px)
 {
     .titulo{
@@ -243,6 +241,5 @@ p{
     }
     .titulo2{
       font-size: 5em;
-    }
-    
+    }  
 } 
