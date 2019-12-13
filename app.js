@@ -11,13 +11,12 @@ window.onload = function() {
     iniciar();
 }
 
+
 function iniciar(){
     document.getElementById("numero1").addEventListener("click", abrirVentana,false);
 }
 
 function controlarBotonMenu(){
-
-
     // Web Menu: https://github.com/tobiasahlin/animated-menu
     let menuLink = document.getElementById("menu-link");
     menuLink.addEventListener("click", abrirCerrarMenu);
