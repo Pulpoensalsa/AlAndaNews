@@ -1,3 +1,17 @@
+if ('serviceWorker' in navigator)
+{
+    window.addEventListener('load',function(){
+        this.navigator.serviceWorker.register('../sw.js')
+        .then(function(){
+            console.log("ServiceWorker registrado");
+        })
+        .catch(function(err){
+            console.log("ServiceWorker mal registrado" + err);
+        })
+    })
+}
+
+
 window.onload = function() {
 	lax.setup() // init
 
@@ -31,7 +45,7 @@ function abrirCerrarMenu(e){
 
 function abrirVentana()
 {
-    var w = window.open("numeros/numero1.html");
+    var w = window.open("../numeros/numero1.html");
 }
 
 

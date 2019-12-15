@@ -60,7 +60,7 @@ header {
 }
 
 .titulo_container{
-    width: 50%;
+    width: 90%;
     height: 6rem;
     justify-self: center;
     display: flex;
@@ -77,7 +77,6 @@ header {
     font-size: 7em;
     line-height: .9em;
     text-align: center;
-    top: 0px;
 }
 
 .titulo2 {
@@ -88,7 +87,6 @@ header {
     line-height: .9em;
     color: floralwhite;
     position: absolute;
-    top: 0px;
     text-align: center;
 }
 
@@ -250,8 +248,12 @@ p{
         font-size: 5em;
     }
     .titulo2{
-      font-size: 5em;
+       font-size: 5em;
     }  
+
+    .titulo_container{
+        margin-top: 10rem;
+    }
 
     .foto_instituto{
         width: 20rem;
