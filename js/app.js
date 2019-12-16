@@ -1,15 +1,15 @@
-if ('serviceWorker' in navigator)
-{
-    window.addEventListener('load',function(){
-        this.navigator.serviceWorker.register('../sw.js')
-        .then(function(){
-            console.log("ServiceWorker registrado");
-        })
-        .catch(function(err){
-            console.log("ServiceWorker mal registrado" + err);
-        })
-    })
-}
+// if ('serviceWorker' in navigator)
+// {
+//     window.addEventListener('load',function(){
+//         this.navigator.serviceWorker.register('../sw.js')
+//         .then(function(){
+//             console.log("ServiceWorker registrado");
+//         })
+//         .catch(function(err){
+//             console.log("ServiceWorker mal registrado" + err);
+//         })
+//     })
+// }
 
 
 window.onload = function() {
@@ -41,11 +41,25 @@ function abrirCerrarMenu(e){
         e.preventDefault();
     document.getElementById("menu").classList.toggle("open");
     document.getElementById("menu-overlay").classList.toggle("open");
+
+    if(e==undefined)
+    {
+        let target= window.event.target.id;
+        switch(target){
+            case "info_menu" : jump("container1"); break;
+            case "revista_menu" : jump("container2"); break;
+            case "contacto_menu" : jump("container3"); break;
+        }
+    }
+}
+
+function jump(hash) { 
+    setTimeout(function(){ location.replace("#" + hash);} , 500); 
 }
 
 function abrirVentana()
 {
-    var w = window.open("../numeros/numero1.html");
+    var w = window.open("./numeros/numero1.html");
 }
 
 
