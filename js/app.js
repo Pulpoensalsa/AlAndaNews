@@ -28,6 +28,7 @@ window.onload = function() {
 
 function iniciar(){
     document.getElementById("numero1").addEventListener("click", abrirVentana,false);
+    document.getElementById("numero2").addEventListener("click", abrirVentana2,false);
 }
 
 function controlarBotonMenu(){
@@ -57,10 +58,8 @@ function jump(hash) {
     setTimeout(function(){ location.replace("#" + hash);} , 500); 
 }
 
-function abrirVentana()
-{
-    var w = window.open("./numeros/numero1.html");
-}
+function abrirVentana() { var w = window.open("./numeros/numero1.html"); }
+function abrirVentana2() { var w = window.open("./numeros/numero2.html"); }
 
 
 

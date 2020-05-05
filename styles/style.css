@@ -104,10 +104,15 @@ header {
   height: 100vh;
   width: 100vw; 
   background-color: #cccccc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .subcontainer2{
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -258,7 +263,7 @@ p{
     height: 14vh;
 }
 
-@media only screen and (max-width: 400px)
+@media only screen and (max-width: 620px)
 {
     .titulo{
         font-size: 5em;
@@ -280,6 +285,13 @@ p{
     .box1{
         width: 280px;
         height: 280px;
+    }
+
+    .container2{
+        height: auto;
+        justify-content: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 } 
 /* 
